@@ -1,0 +1,254 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:padding="16dp"
+    android:background="#E1FFF1">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/primary_fon"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/misans"
+        android:gravity="top"
+        android:text="设置信息"
+        android:textAppearance="@style/primary_fon" />
+
+    <!-- Profile Icon -->
+    <RelativeLayout
+        android:id="@+id/generic_ava"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/generic_ava"
+        android:clipToOutline="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true">
+    </RelativeLayout>
+
+    <!-- Toggle Buttons -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/primary_fon"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="33dp"
+        android:layout_marginEnd="30dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Toggle Button 1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="开启智能调峰系统"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switch_smart_peak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switch_smart_peak"
+                android:layout_marginTop="8dp"
+                android:text="关闭后系统所有组件将不再工作"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- Slider 1 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="电池充放电范围"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_battery_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="0%"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp" />
+
+            <SeekBar
+                android:id="@+id/seekbar_battery_range"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_battery_range"
+                android:layout_marginTop="16dp"
+                android:max="100"
+                android:progress="50" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/seekbar_battery_range"
+                android:layout_marginTop="8dp"
+                android:text="选择电池保留的电量，预留一定的电量可以使您在停电等突发情况获得保障，但是相应地将会影响电池的寿命。"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- Toggle Button 2 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="学习模式"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switch_learning_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switch_learning_mode"
+                android:layout_marginTop="8dp"
+                android:text="开启学习模式后系统将不断学习你的用电习惯"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <!-- Toggle Button 3 -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="远行模式"
+                android:textColor="#1E1E1E"
+                android:textSize="16sp" />
+
+            <Switch
+                android:id="@+id/switch_travel_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:checked="false" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/switch_travel_mode"
+                android:layout_marginTop="8dp"
+                android:text="开启远行模式后系统将使电池保持在易于保存的电量并且不再随峰谷电进行充放电"
+                android:textColor="#757575"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:background="#E1FFF1">
+
+        <LinearLayout
+            android:id="@+id/btn_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/menumain"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="主界面"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/menusetting"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="设置"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/menupic"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="数据表格"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">峰谷易和</string>
+    <string name="login">登录</string>
+    <string name="register">注册新账户</string>
+    <string name="username_hint">请输入账户名</string>
+    <string name="password_hint">请输入密码</string>
+    <string name="main_title">Electricity Controller</string>
+    <string name="main_subtitle">峰谷易和</string>
+    <string name="current_usage">本月当前用电量</string>
+    <string name="battery_level">当前电池剩余电量: 130kW·h\n75%</string>
+    <string name="saving_info">该用户本月用电习惯良好，在峰谷易和的调节下，本月总计为用户节约了71kW·h的峰电，用电最多的是7月12日，用掉了21kW·h的电，最少的是7月20日，用掉了7kW·h的电。希望用户再接再厉，继续保持！</string>
+    <string name="logout_confirmation">退出登陆吗？</string>
+    <string name="logout_message">如果退出，你将需要重新登陆。</string>
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="chart_title">用电信息图表</string>
+    <string name="chart_message">感谢您的关注！该功能将在后续添加到程序中！</string>
+    <string name="settings_title">设置信息</string>
+    <string name="smart_mode">开启智能调峰系统\n关闭后系统所有组件将不再工作</string>
+    <string name="battery_range">电池充放电范围 %0-100\n选择电池蓄电的范围，左侧表示电池至少预留的电量，预留一定的电量可以使停电等突发情况时得以保障，但是相应地峰谷电调节的程度也会相对减弱，右侧则是最大充电电量</string>
+    <string name="learning_mode">学习模式\n开启学习模式后系统将不断学习你的用电习惯</string>
+    <string name="trip_mode">远行模式\n开启远行模式后系统将使得电池保持在易于保存的电量并且不再随峰谷电进行充放电</string>
+    <string name="electricity">Electricity\nController</string>
+    <string name="primary_fon">峰谷易和</string>
+    <string name="some_id">感谢您的关注！\n该功能将在后续添加到程序中！</string>
+</resources>

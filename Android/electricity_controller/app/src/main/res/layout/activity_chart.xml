@@ -1,0 +1,134 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChartActivity"
+    android:background="#E1FFF1"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/primary_fon"
+        android:layout_width="300dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/misans"
+        android:gravity="top"
+        android:text="用电信息图表"
+        android:textAppearance="@style/primary_fon" />
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/frown"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="182dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="393dp"
+        android:clipToOutline="true"
+        android:background="@drawable/unhappyface"
+        />
+    <TextView
+        android:id="@+id/some_id"
+        android:layout_width="224dp"
+        android:layout_height="159dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="94dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="465dp"
+        android:text="@string/some_id"
+        android:textAppearance="@style/some_id"
+        android:lineSpacingExtra="3sp"
+        android:translationY="-1.52sp"
+        android:gravity="center_horizontal|top"
+        />
+    <RelativeLayout
+        android:id="@+id/generic_ava"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/generic_ava"
+        android:clipToOutline="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+    <RelativeLayout
+        android:id="@+id/bottom_menu_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:padding="16dp"
+        android:layout_alignParentBottom="true">
+
+        <LinearLayout
+            android:id="@+id/btn_chart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/menumain"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="主界面"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_settings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/menusetting"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="设置"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:background="@drawable/menupic"
+                android:clipToOutline="true" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="数据表格"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
